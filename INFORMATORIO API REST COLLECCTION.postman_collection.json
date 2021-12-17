@@ -9,13 +9,13 @@
 			"name": "USUARIOS",
 			"item": [
 				{
-					"name": "Creación",
+					"name": "Us: Creación",
 					"request": {
 						"method": "POST",
 						"header": [],
 						"body": {
 							"mode": "raw",
-							"raw": "{\r\n    \"nombre\": \"Martha Elvira\",\r\n    \"apellido\": \"Roth\",\r\n    \"email\": \"meroth@gmail.com\",\r\n    \"password\": \"12345\",\r\n    \"ciudad\": \"Hermoso Campo\",\r\n    \"provincia\": \"Chaco\",\r\n    \"pais\": \"Argentina\",\r\n    \"tipo\": \"USUARIO\"\r\n}",
+							"raw": "{\r\n    \"nombre\": \"nombre 4\",\r\n    \"apellido\": \"apellido 4\",\r\n    \"email\": \"mail4@gmail.com\",\r\n    \"password\": \"aab\",\r\n    \"ciudad\": \"ciudad 1\",\r\n    \"provincia\": \"Chaco\",\r\n    \"pais\": \"Argentina\",\r\n    \"tipo\": \"USUARIO\"\r\n}",
 							"options": {
 								"raw": {
 									"language": "json"
@@ -39,9 +39,9 @@
 					"response": []
 				},
 				{
-					"name": "eliminar usuario",
+					"name": "Us: Eliminación",
 					"request": {
-						"method": "PUT",
+						"method": "DELETE",
 						"header": [],
 						"body": {
 							"mode": "raw",
@@ -53,7 +53,7 @@
 							}
 						},
 						"url": {
-							"raw": "http://localhost:8080/api/v1/usuarios/1/quitar",
+							"raw": "http://localhost:8080/api/v1/usuarios/1/",
 							"protocol": "http",
 							"host": [
 								"localhost"
@@ -64,20 +64,20 @@
 								"v1",
 								"usuarios",
 								"1",
-								"quitar"
+								""
 							]
 						}
 					},
 					"response": []
 				},
 				{
-					"name": "modificar usuario",
+					"name": "Us: Modificación",
 					"request": {
 						"method": "PUT",
 						"header": [],
 						"body": {
 							"mode": "raw",
-							"raw": "{\r\n    \"nombre\": \"Juan\",\r\n    \"apellido\": \"Perez\",\r\n    \"email\": \"juanperez@gmail.com\",\r\n    \"password\": \"7312678\",\r\n    \"ciudad\": \"Fontana\",\r\n    \"provincia\": \"Chaco\",\r\n    \"pais\": \"Argentina\",\r\n    \"tipo\": \"OWNER\"\r\n}",
+							"raw": "{\r\n    \"nombre\": \"nombre 1\",\r\n    \"apellido\": \"apellido 1\",\r\n    \"email\": \"mail1@hotmail.com\",\r\n    \"password\": \"7312678\",\r\n    \"ciudad\": \"Fontana\",\r\n    \"provincia\": \"Chaco\",\r\n    \"pais\": \"Argentina\",\r\n    \"tipo\": \"OWNER\"\r\n}",
 							"options": {
 								"raw": {
 									"language": "json"
@@ -102,7 +102,7 @@
 					"response": []
 				},
 				{
-					"name": "obtener todos los usuarios",
+					"name": "Us: Todos",
 					"request": {
 						"method": "GET",
 						"header": [],
@@ -123,12 +123,12 @@
 					"response": []
 				},
 				{
-					"name": "obtener usuarios por ciudad",
+					"name": "Us: por Ciudad",
 					"request": {
 						"method": "GET",
 						"header": [],
 						"url": {
-							"raw": "http://localhost:8080/api/v1/usuarios?ciudad=Resistencia",
+							"raw": "http://localhost:8080/api/v1/usuarios?ciudad=ciudad 1",
 							"protocol": "http",
 							"host": [
 								"localhost"
@@ -142,7 +142,7 @@
 							"query": [
 								{
 									"key": "ciudad",
-									"value": "Resistencia"
+									"value": "ciudad 1"
 								}
 							]
 						}
@@ -150,7 +150,7 @@
 					"response": []
 				},
 				{
-					"name": "obtener usuarios por fecha",
+					"name": "Us: por Fecha",
 					"request": {
 						"method": "GET",
 						"header": [],
@@ -179,16 +179,16 @@
 			]
 		},
 		{
-			"name": "emprendimiento",
+			"name": "EMPRENDIMIENTOS",
 			"item": [
 				{
-					"name": "crear emprendimiento",
+					"name": "Emp: Creación",
 					"request": {
 						"method": "POST",
 						"header": [],
 						"body": {
 							"mode": "raw",
-							"raw": "{\r\n    \"nombre\": \"Lavavajillas de media carga\",\r\n    \"descripcion\": \"Electrodomestico ecologico\",\r\n    \"contenido\": \"Permite ajustar el gasto de agua y electricidad a las necesidades que tengas las familias en ese momento\",\r\n    \"objetivo\": 500000,\r\n    \"publicado\": true,\r\n    \"url\": \"google/images\",\r\n    \"tags\": [\r\n        {\r\n           \"nombre\": \"Ahorro\"\r\n        },\r\n        {\r\n            \"nombre\": \"Sostenibilidad\"\r\n        },\r\n        {\r\n            \"nombre\": \"Electrodomesticos\"\r\n        }\r\n    ]\r\n}",
+							"raw": "{\r\n    \"nombre\": \"Emprendimiento 2\",\r\n    \"descripcion\": \"Emprendimiento 2 - Descripcion del Emprendimiento\",\r\n    \"contenido\": \"Contenido 2 del Emprendimiento 2\",\r\n    \"objetivo\": 1001,\r\n    \"publicado\": true,\r\n    \"url\": \"google/images\",\r\n    \"tags\": [\r\n        {\r\n           \"nombre\": \"Ahorro\"\r\n        },\r\n        {\r\n            \"nombre\": \"Sostenibilidad\"\r\n        },\r\n        {\r\n            \"nombre\": \"Electrodomesticos\"\r\n        }\r\n    ]\r\n}",
 							"options": {
 								"raw": {
 									"language": "json"
@@ -214,12 +214,12 @@
 					"response": []
 				},
 				{
-					"name": "eliminar emprendimiento",
+					"name": "Emp: Eliminación",
 					"request": {
-						"method": "PUT",
+						"method": "DELETE",
 						"header": [],
 						"url": {
-							"raw": "http://localhost:8080/api/v1/emprendimientos/1/quitar",
+							"raw": "http://localhost:8080/api/v1/emprendimientos/1/",
 							"protocol": "http",
 							"host": [
 								"localhost"
@@ -230,14 +230,14 @@
 								"v1",
 								"emprendimientos",
 								"1",
-								"quitar"
+								""
 							]
 						}
 					},
 					"response": []
 				},
 				{
-					"name": "modificar emprendimiento",
+					"name": "Emp: Modificiación",
 					"request": {
 						"method": "PUT",
 						"header": [],
@@ -268,7 +268,7 @@
 					"response": []
 				},
 				{
-					"name": "obtener todos los emprendimientos",
+					"name": "Emp: Todos",
 					"request": {
 						"method": "GET",
 						"header": [],
@@ -289,7 +289,7 @@
 					"response": []
 				},
 				{
-					"name": "emprendimientos por tags",
+					"name": "Emp: por Tag",
 					"request": {
 						"method": "GET",
 						"header": [],
@@ -316,7 +316,7 @@
 					"response": []
 				},
 				{
-					"name": "emprendimientos sin publicar",
+					"name": "Emp: sin Publicar",
 					"request": {
 						"method": "GET",
 						"header": [],
@@ -340,10 +340,10 @@
 			]
 		},
 		{
-			"name": "emprendimiento_evento",
+			"name": "EMPREND - EVENTOS",
 			"item": [
 				{
-					"name": "inscribir emprendimiento a evento",
+					"name": "Inscripción Emp a Ev",
 					"request": {
 						"method": "POST",
 						"header": [],
@@ -369,10 +369,10 @@
 			]
 		},
 		{
-			"name": "evento",
+			"name": "EVENTOS",
 			"item": [
 				{
-					"name": "crear evento",
+					"name": "Ev: Creación",
 					"request": {
 						"method": "POST",
 						"header": [],
@@ -402,7 +402,7 @@
 					"response": []
 				},
 				{
-					"name": "eliminar evento",
+					"name": "Ev: Eliminación",
 					"request": {
 						"method": "PUT",
 						"header": [],
@@ -425,7 +425,7 @@
 					"response": []
 				},
 				{
-					"name": "modificar evento",
+					"name": "Ev: Modificación",
 					"request": {
 						"method": "PUT",
 						"header": [],
@@ -472,10 +472,10 @@
 			]
 		},
 		{
-			"name": "voto",
+			"name": "VOTOS",
 			"item": [
 				{
-					"name": "crear voto",
+					"name": "V: Votar",
 					"request": {
 						"method": "POST",
 						"header": [],
@@ -505,7 +505,7 @@
 					"response": []
 				},
 				{
-					"name": "todos los votos de un usuario",
+					"name": "V: por Usuario",
 					"request": {
 						"method": "GET",
 						"header": [],
